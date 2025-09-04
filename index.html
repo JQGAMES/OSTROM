@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIND IHRE STROMKOSTEN AUCH ZU HOCH?</title>
+    <style>
+        :root {
+            --background-color: #2F2F2F; /* Richtig schön dunkelgrau */
+            --text-color: #F8C3CD;      /* Creme Rosa */
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 2rem 1rem;
+            line-height: 1.6;
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 1rem;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            font-size: clamp(2rem, 5vw, 3rem);
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin-top: 0;
+            margin-bottom: 3rem;
+            font-size: clamp(1.2rem, 3vw, 1.5rem);
+        }
+        
+        h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-size: clamp(1.3rem, 3vw, 1.5rem);
+        }
+
+        .section {
+            padding: 2rem 0;
+            border-bottom: 1px solid rgba(248, 195, 205, 0.2);
+        }
+
+        .section:last-of-type {
+            border-bottom: none;
+        }
+
+        .text-content {
+            text-align: left;
+            word-wrap: break-word;
+            padding: 0 1rem;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        li {
+            margin-bottom: 1rem;
+        }
+
+        li::before {
+            content: '✔ ';
+            color: var(--text-color);
+            font-weight: bold;
+            display: inline-block;
+            width: 1.5rem;
+        }
+
+        .code-container {
+            background-color: rgba(248, 195, 205, 0.1);
+            border-radius: 8px;
+            padding: 1rem;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            position: relative;
+            text-align: center;
+        }
+        
+        #couponCode {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 2rem;
+            font-weight: 900;
+            color: var(--text-color);
+            user-select: none;
+            cursor: pointer;
+            word-wrap: break-word;
+            white-space: pre-wrap;
+            font-size: clamp(1.5rem, 6vw, 2rem);
+        }
+
+        .brand-name {
+            font-weight: 700;
+            font-size: 1.1em;
+        }
+        
+        .text-content .brand-name-normal {
+            font-weight: normal;
+            font-size: 1em;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 1rem 0.5rem;
+            }
+            .container {
+                padding: 0.5rem;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 1.1rem;
+            }
+            h3 {
+                font-size: 1.2rem;
+            }
+            #couponCode {
+                font-size: 1.5rem;
+            }
+            .text-content {
+                padding: 0 0.5rem;
+            }
+        }
+
+        /* Stil für den neuen Button */
+        .btn-ostrom {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 1rem 2rem;
+            font-size: 1.25rem;
+            font-weight: bold;
+            text-decoration: none;
+            color: var(--background-color);
+            background-color: var(--text-color);
+            border-radius: 50px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .btn-ostrom:hover {
+            background-color: #E0B4BD;
+            transform: scale(1.05);
+        }
+
+        .btn-ostrom strong {
+            font-weight: 900;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>SIND IHRE STROMKOSTEN AUCH ZU HOCH?</h1>
+    <h2>WARUM SICH EIN WECHSEL ZU <span class="brand-name">OSTROM</span> IN JEDEM FALL LOHNT.</h2>
+
+    <div class="section">
+        <h3>Warum sich ein Wechsel zu <span class="brand-name">OSTROM</span> wirtschaftlich lohnt</h3>
+        <p class="text-content">
+            Viele Haushalte in Deutschland sehen sich mit stetig steigenden Stromkosten konfrontiert. Monat für Monat flattern hohe Abschlagszahlungen ins Haus, die oft nicht nachvollziehbar erscheinen. Besonders ärgerlich wird es, wenn die Jahresabrechnung erneut eine Nachzahlung verlangt. Hinzu kommt das Gefühl, als Kunde keine Transparenz über die Zusammensetzung der Strompreise zu haben und somit ausgeliefert zu sein. Dieses Unbehagen führt zu wachsender Unzufriedenheit – viele Menschen suchen daher nach einer Alternative, die fair, transparent und kosteneffizient ist.
+        </p>
+    </div>
+
+    <div class="section">
+        <h3>Warum <span class="brand-name">OSTROM</span> besser als andere Anbieter ist</h3>
+        <p class="text-content">
+            <span class="brand-name-normal">OSTROM</span> unterscheidet sich grundlegend von den klassischen Stromanbietern. Während viele Unternehmen mit komplizierten Tarifen, versteckten Kosten und langfristigen Vertragsbindungen arbeiten, setzt <span class="brand-name-normal">OSTROM</span> auf Einfachheit, Fairness und volle Transparenz. Hier gibt es:
+        </p>
+        <ul class="text-content">
+            <li>Keine undurchsichtigen Preisstrukturen: Bei <span class="brand-name-normal">OSTROM</span> bezahlt man einen klaren Grundpreis sowie den reinen Einkaufspreis für den Strom. Ganz ohne Aufschläge.</li>
+            <li>100 % Flexibilität: Der Vertrag ist monatlich kündbar – keine längerfristige Abhängigkeit.</li>
+            <li>Nachhaltigkeit: <span class="brand-name-normal">OSTROM</span> bietet ausschließlich Ökostrom aus erneuerbaren Energien an. So profitieren nicht nur die Finanzen, sondern auch die Umwelt.</li>
+            <li>Kundenzentrierung: Ein moderner digitaler Ansatz erlaubt volle Kontrolle über die Kosten in Echtzeit – jederzeit einsehbar per App.</li>
+        </ul>
+        <p class="text-content">
+            Viele herkömmliche Stromanbieter arbeiten mit Bonusversprechen oder Lockangeboten, die sich nach kurzer Zeit als Kostenfalle entpuppen. <span class="brand-name-normal">OSTROM</span> dagegen steht für Ehrlichkeit und ein modernes, kundenfreundliches Modell, das keine unangenehmen Überraschungen zulässt.
+        </p>
+    </div>
+
+    <div class="section">
+        <h3>Wie <span class="brand-name">OSTROM</span> genau funktioniert</h3>
+        <p class="text-content">
+            Das Prinzip von <span class="brand-name-normal">OSTROM</span> ist so einfach wie genial:
+        </p>
+        <ul class="text-content">
+            <li>Einkaufspreis + Grundgebühr: Kunden zahlen genau das, was <span class="brand-name-normal">OSTROM</span> selbst für den Strom an der Börse zahlt. Hinzu kommt nur eine faire, transparente Grundgebühr für den Service.</li>
+            <li>Digitale Transparenz: Über die App können Nutzer jederzeit nachvollziehen, wie sich ihr Strompreis zusammensetzt und welchen Verbrauch sie haben.</li>
+            <li>Volle Flexibilität: Kein Kleingedrucktes, keine Vertragsbindung über Jahre. Wer wechseln möchte, kann dies monatlich tun – was zeigt, wie sehr <span class="brand-name-normal">OSTROM</span> von seinem Modell überzeugt ist.</li>
+            <li>Nachhaltige Energieversorgung: Der gesamte Strom stammt aus erneuerbaren Energien – Kunden leisten also aktiv einen Beitrag zur Energiewende.</li>
+        </ul>
+        <p class="text-content">
+            Durch dieses Modell profitieren Kunden gleich doppelt: finanziell durch faire und oft niedrigere Preise sowie ideell durch die Gewissheit, ein zukunftsorientiertes und nachhaltiges Energiemodell zu unterstützen.
+        </p>
+    </div>
+    
+    <div class="section">
+        <p class="text-content">
+            Auch meine Familie hat den Wechsel zu <span class="brand-name-normal">Ostrom</span> gewagt und ist begeistert. Die monatliche Stromrechnung ist teils um etwa <strong>40-50€ niedriger</strong>, was eine deutliche finanzielle Entlastung bedeutet.
+        </p>
+    </div>
+
+    <div class="section">
+        <h3>Fazit</h3>
+        <p class="text-content">
+            Ein Wechsel zu <span class="brand-name-normal">OSTROM</span> bedeutet, sich von überhöhten und intransparenten Stromkosten zu befreien. Stattdessen erhält man ein modernes, ehrliches und flexibles Modell, das sowohl die Finanzen als auch die Umwelt schont. Wer seine monatlichen Stromausgaben endlich in den Griff bekommen und gleichzeitig Teil einer nachhaltigen Energiewende werden möchte, findet in <span class="brand-name-normal">OSTROM</span> die richtige Wahl. Ein Anbieter, der sich rechnet – heute und in Zukunft.
+        </p>
+    </div>
+
+    <div class="code-container">
+        <p>Bis zu 100€ Wechselbonus mit diesem Gutscheincode sichern:</p>
+        <p id="couponCode">JAKOR8A6MY</p>
+    </div>
+
+    <a href="https://www.ostrom.de" class="btn-ostrom" target="_blank">Jetzt zu <strong>OSTROM</strong> wechseln</a>
+
+</div>
+
+<script>
+    document.getElementById('couponCode').addEventListener('click', function() {
+        const couponCode = this.innerText;
+        navigator.clipboard.writeText(couponCode).then(() => {
+            alert('Gutscheincode kopiert: ' + couponCode);
+        }).catch(err => {
+            console.error('Fehler beim Kopieren des Codes: ', err);
+        });
+    });
+</script>
+
+</body>
+</html>
